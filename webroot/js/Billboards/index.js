@@ -45,12 +45,17 @@ function billboardsAction(type, id) {
         billboardData = 'action_type=' + type + '&id=' + id;
     }
     $.ajax({
-        type: 'POST',
-        url: 'billboardsAction.php',
-        data: billboardData,
+       type: requestType,
+        headers: {
+            'X-CSRF-Token': $('[name="_csrfToken"]').val()
+        },
+        url: ajaxUrl,
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(billboardData),
         success: function (msg) {
-            if (msg == 'ok') {
-                alert('Billboards data has been ' + statusArr[type] + ' successfully.');
+            if (msg) {
+                alert('billboard data has been ' + statusArr[type] + ' successfully.');
                 getBillboards();
                 $('.form')[0].reset();
                 $('.formData').slideUp();
@@ -63,14 +68,12 @@ function billboardsAction(type, id) {
 
 function editBillboards(id) {
     $.ajax({
-        type: 'POST',
+          type: 'GET',
         dataType: 'JSON',
-        url: 'billboardsAction.php',
-        data: 'action_type=data&id=' + id,
+        url: urlToRestApi+ "/" + id,
         success: function (data) {
-            $('#idEdit').val(data.id);
-            $('#billboardsEdit').val(data.billboardDetails);
-         
+            $('#billboard_idEdit').val(data.data.id);
+            $('#billboard_detailsEdit').val(data.data.billboard_details);        
             $('#editForm').slideDown();
         }
     });

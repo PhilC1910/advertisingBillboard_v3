@@ -59,7 +59,7 @@ Router::prefix('Admin', function ($routes) {
 });
    
 Router::extensions(['json', 'xml','pdf']);
-Router::mapResources(['BillboardsHired']);
+
 
 Router::scope('/', function (RouteBuilder $routes) {
     /**

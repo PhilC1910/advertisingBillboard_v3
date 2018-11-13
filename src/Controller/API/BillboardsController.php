@@ -1,15 +1,8 @@
 <?php
 namespace App\Controller\Api;
 
-use App\Controller\AppController;
+use App\Controller\Api\AppController;
 
-/**
- * Billboards Controller
- *
- * @property \App\Model\Table\BillboardsTable $Billboards
- *
- * @method \App\Model\Entity\Billboard[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
- */
 class BillboardsController extends AppController
 {
    

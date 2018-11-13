@@ -6,8 +6,6 @@
  $loguser = $this->request->session()->read('Auth.User');
  $userrole = $loguser['role_id'];
  
-$this->extend('/Layout/TwitterBootstrap/dashboard');
-$this->start('tb_actions');
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
