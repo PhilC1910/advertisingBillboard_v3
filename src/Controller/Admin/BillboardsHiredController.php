@@ -13,11 +13,18 @@ use App\Controller\AppController;
 class BillboardsHiredController extends AppController
 {
 
+       public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+    }
+    
     /**
      * Index method
      *
      * @return \Cake\Http\Response|void
      */
+ 
     public function index()
     {
         $this->paginate = [

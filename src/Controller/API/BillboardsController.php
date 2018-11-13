@@ -26,21 +26,5 @@ class BillboardsController extends AppController
         ]
     ];
  
-     public function beforeFilter(\Cake\Event\Event $event){
-        parent::beforeFilter($event);
-        if($this->request->param('action') === 'add'){
-            $this->eventManager()->off($this->Csrf);
-        }
-    }
-    public function isAuthorized($user)
-    {
-        return true;  
-    }
-    
-      public function initialize() {
-        parent::initialize();
-        // Set the layout.
-        $this->viewBuilder()->setLayout('monopage');
-    }
   
 }

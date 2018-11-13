@@ -1,63 +1,47 @@
 <?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\Billboard[]|\Cake\Collection\CollectionInterface $billboards
- */
- $loguser = $this->request->session()->read('Auth.User');
- $userrole = $loguser['role_id'];
+$urlToRestApi = $this->Url->build('/api/Billboards', true);
+echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
+echo $this->Html->script('Billboards/index', ['block' => 'scriptBottom']);
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-           <li class="heading"><?= __('Actions') ?></li>
-            <li><?= $this->Html->link(__('New Billboard'), ['action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="billboards index large-9 medium-8 columns content">
-        <h3><?= __('Billboards') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                     <th scope="col"><?= $this->Paginator->sort('billboard_id') ?></th>
-                     <th scope="col"><?= $this->Paginator->sort('billboard_details') ?></th>
-            
-                     
-                     <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                     <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
-                    <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            
-            <?php foreach ($billboards as $billboard): ?>
-            <tr>
-            
-                <td><?= $this->Number->format($billboard->billboard_id) ?></td>
-                     <td><?= h($billboard->billboard_details) ?></td>
-                <td><?= h($billboard->created) ?></td>
-            
-                <td><?= h($billboard->modified) ?></td>
-            
-                <td class="actions">
-                         <?= $this->Html->link(__('View'), ['action' => 'view', $billboard->billboard_id]) ?>
-             
-               
-                             <?php if($userrole === "agent de marketing"|| $userrole === "admin" ){echo $this->Html->link(__('Edit'), ['action' => 'edit', $billboard->billboard_id]);} ?> 
-            
-            
-                                 <?php if($userrole === "admin"){echo $this->Form->postLink(__('Delete'), ['action' => 'delete', $billboard->billboard_id], ['confirm' => __('Are you sure you want to delete # {0}?', $billboard->billboard_id)]);} ?> 
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-           <?= $this->Paginator->first('<< ' . __('first')) ?>
-           <?= $this->Paginator->prev('< ' . __('previous')) ?>
-           <?= $this->Paginator->numbers() ?>
-           <?= $this->Paginator->next(__('next') . ' >') ?>
-           <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
-    </div>
-</div>
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-default users-content">
+                    <div class="panel-heading">Billboards <a href="javascript:void(0);" class="glyphicon glyphicon-plus" id="addLink" onclick="javascript:$('#addForm').slideToggle();">Add</a></div>
+                    <div class="panel-body none formData" id="addForm">
+                        <h2 id="actionLabel">Add Billboard</h2>
+                        <form class="form" id="billboardForm">
+                         <div class="form-group">
+                                <label>billboard details</label>
+                                <input type="text" class="form-control" name="billboard_details" id="emailEdit"/>
+                            </div>
+                            <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
+                            <a href="javascript:void(0);" class="btn btn-success" onclick="billboardAction('add')">Add User</a>
+                        </form>
+                    </div>
+                    <div class="panel-body none formData" id="editForm">
+                        <h2 id="actionLabel">Edit User</h2>
+                        <form class="form" id="billboardForm">
+                           
+                            <div class="form-group">
+                                <label>billboard details</label>
+                                <input type="text" class="form-control" name="billboard_details" id="emailEdit"/>
+                            </div>
+                        
+                            <input type="hidden" class="form-control" name="billboard_id" id="idEdit"/>
+                            <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
+                            <a href="javascript:void(0);" class="btn btn-success" onclick="billboardAction('edit')">Update User</a>
+                        </form>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Billboards</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+

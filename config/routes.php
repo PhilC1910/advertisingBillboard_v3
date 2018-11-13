@@ -58,8 +58,8 @@ Router::prefix('Admin', function ($routes) {
     $routes->fallbacks('InflectedRoute');
 });
    
-Router::extensions(['pdf']);
-
+Router::extensions(['json', 'xml','pdf']);
+Router::mapResources(['BillboardsHired']);
 
 Router::scope('/', function (RouteBuilder $routes) {
     /**
