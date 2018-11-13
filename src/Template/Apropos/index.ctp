@@ -26,5 +26,5 @@
       <?php  echo  $this->Html->image('schema_base_de_donnee.PNG', ['alt' => 'Schema base de donnnee'], ['width'=>"100"], ['height'=>"100"], ['align' => 'center']) ?>
    </p>
     <a href="http://www.databaseanswers.org/data_models/advertising_billboards/index.htm"> lien vers la bd originale </a>
-
+     <p> le github est https://github.com/PhilC1910/advertisingBillboard_v3.git</p>
 </div>
