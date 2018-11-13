@@ -1,0 +1,634 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-09 17:55+0000\n"
+"PO-Revision-Date: 2018-10-09 16:20-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"Last-Translator: \n"
+"Language: fr_CA\n"
+
+#: Controller/BillboardsController.php:55;79
+msgid "The billboard has been saved."
+msgstr "Te afichaj la te sove."
+
+#: Controller/BillboardsController.php:59;83
+msgid "The billboard could not be saved. Please, try again."
+msgstr "Bidjè a pa ka sove. Tanpri, eseye ankò."
+
+#: Controller/BillboardsController.php:100
+msgid "The billboard has been deleted."
+msgstr "Te afichaj la te efase."
+
+#: Controller/BillboardsController.php:102
+msgid "The billboard could not be deleted. Please, try again."
+msgstr "Bidjè a pa t 'kapab efase. Tanpri, eseye ankò."
+
+#: Controller/BillboardsHiredController.php:58;85
+msgid "The billboards hired has been saved."
+msgstr "Billboards yo te anboche te sove."
+
+#: Controller/BillboardsHiredController.php:62;89
+msgid "The billboards hired could not be saved. Please, try again."
+msgstr "Billboards yo te anboche pa ka sove. Tanpri, eseye ankò."
+
+#: Controller/BillboardsHiredController.php:109
+msgid "The billboards hired has been deleted."
+msgstr "Te tablo afichaj yo anboche te efase."
+
+#: Controller/BillboardsHiredController.php:111
+msgid "The billboards hired could not be deleted. Please, try again."
+msgstr "Billboards yo anboche pa t 'kapab efase. Tanpri, eseye ankò."
+
+#: Controller/HiringPartiesController.php:58;83
+msgid "The hiring party has been saved."
+msgstr "Te pati nan anbochaj te sove."
+
+#: Controller/HiringPartiesController.php:62;87
+msgid "The hiring party could not be saved. Please, try again."
+msgstr "Pati a anbochaj pa ta ka sove. Tanpri, eseye ankò."
+
+#: Controller/HiringPartiesController.php:105
+msgid "The hiring party has been deleted."
+msgstr "Te pati nan anbochaj te efase."
+
+#: Controller/HiringPartiesController.php:107
+msgid "The hiring party could not be deleted. Please, try again."
+msgstr "Pati a anbochaj pa ta dwe efase. Tanpri, eseye ankò."
+
+#: Controller/InvoicesController.php:58;83
+msgid "The invoice has been saved."
+msgstr "Fakti a te sove."
+
+#: Controller/InvoicesController.php:62;87
+msgid "The invoice could not be saved. Please, try again."
+msgstr "Fakti a pa ka sove. Tanpri, eseye ankò."
+
+#: Controller/InvoicesController.php:105
+msgid "The invoice has been deleted."
+msgstr "Te fakti a te efase."
+
+#: Controller/InvoicesController.php:107
+msgid "The invoice could not be deleted. Please, try again."
+msgstr "Fakti a pa ka efase. Tanpri, eseye ankò."
+
+#: Controller/PaymentsController.php:58;83
+msgid "The payment has been saved."
+msgstr "Peman an te sove."
+
+#: Controller/PaymentsController.php:62;87
+msgid "The payment could not be saved. Please, try again."
+msgstr "Peman an pa ka sove. Tanpri, eseye ankò."
+
+#: Controller/PaymentsController.php:105
+msgid "The payment has been deleted."
+msgstr "Peman an te efase."
+
+#: Controller/PaymentsController.php:107
+msgid "The payment could not be deleted. Please, try again."
+msgstr "Peman an pa ka efase. Tanpri, eseye ankò."
+
+#: Controller/RefHiringPartyTypesController.php:55;79
+msgid "The ref hiring party type has been saved."
+msgstr "Pati a ref te refize te sove."
+
+#: Controller/RefHiringPartyTypesController.php:59;83
+msgid "The ref hiring party type could not be saved. Please, try again."
+msgstr "Pati nan ref anplwaye pa ka sove. Tanpri, eseye ankò."
+
+#: Controller/RefHiringPartyTypesController.php:100
+msgid "The ref hiring party type has been deleted."
+msgstr "Pati nan ref te refize te efase."
+
+#: Controller/RefHiringPartyTypesController.php:102
+msgid "The ref hiring party type could not be deleted. Please, try again."
+msgstr "Pati a ref hiring pa t 'kapab efase. Tanpri, eseye ankò."
+
+#: Controller/RolesController.php:55;79
+msgid "The role has been saved."
+msgstr "Wòl la te sove."
+
+#: Controller/RolesController.php:59;83
+msgid "The role could not be saved. Please, try again."
+msgstr "Wòl la pa ka sove. Tanpri, eseye ankò."
+
+#: Controller/RolesController.php:100
+msgid "The role has been deleted."
+msgstr "Wòl la te efase."
+
+#: Controller/RolesController.php:102
+msgid "The role could not be deleted. Please, try again."
+msgstr "Wòl la pa ka efase. Tanpri, eseye ankò."
+
+#: Controller/UsersController.php:58;83
+msgid "The user has been saved."
+msgstr "Itilizatè a te sove."
+
+#: Controller/UsersController.php:62;87
+msgid "The user could not be saved. Please, try again."
+msgstr "Itilizatè a pa ka sove. Tanpri, eseye ankò."
+
+#: Controller/UsersController.php:105
+msgid "The user has been deleted."
+msgstr "Itilizatè a te efase."
+
+#: Controller/UsersController.php:107
+msgid "The user could not be deleted. Please, try again."
+msgstr "Itilizatè a pa ka efase. Tanpri, eseye ankò."
+
+#: Template/Billboards/add.ctp:9 Template/Billboards/edit.ctp:9
+#: Template/Billboards/index.ctp:11;24 Template/Billboards/view.ctp:9
+#: Template/BillboardsHired/add.ctp:9 Template/BillboardsHired/edit.ctp:9
+#: Template/BillboardsHired/index.ctp:11;36 Template/BillboardsHired/view.ctp:9
+#: Template/HiringParties/add.ctp:9 Template/HiringParties/edit.ctp:9
+#: Template/HiringParties/index.ctp:11;27 Template/HiringParties/view.ctp:9
+#: Template/Invoices/add.ctp:9 Template/Invoices/edit.ctp:9
+#: Template/Invoices/index.ctp:11;30 Template/Invoices/view.ctp:9
+#: Template/Payments/add.ctp:9 Template/Payments/edit.ctp:9
+#: Template/Payments/index.ctp:11;27 Template/Payments/view.ctp:9
+#: Template/RefHiringPartyTypes/add.ctp:9
+#: Template/RefHiringPartyTypes/edit.ctp:9
+#: Template/RefHiringPartyTypes/index.ctp:11;25
+#: Template/RefHiringPartyTypes/view.ctp:9 Template/Roles/add.ctp:9
+#: Template/Roles/edit.ctp:9 Template/Roles/index.ctp:9;21
+#: Template/Roles/view.ctp:9;37 Template/Users/add.ctp:9
+#: Template/Users/edit.ctp:9 Template/Users/index.ctp:9;24
+#: Template/Users/view.ctp:9
+msgid "Actions"
+msgstr "stock"
+
+#: Template/Billboards/add.ctp:10 Template/Billboards/edit.ctp:16
+#: Template/Billboards/view.ctp:12 Template/BillboardsHired/add.ctp:11
+#: Template/BillboardsHired/edit.ctp:17 Template/BillboardsHired/index.ctp:13
+#: Template/BillboardsHired/view.ctp:14
+msgid "List Billboards"
+msgstr "Lis panko"
+
+#: Template/Billboards/add.ctp:16
+msgid "Add Billboard"
+msgstr "Add pano"
+
+#: Template/Billboards/add.ctp:21 Template/Billboards/edit.ctp:27
+#: Template/BillboardsHired/add.ctp:31 Template/BillboardsHired/edit.ctp:37
+#: Template/HiringParties/add.ctp:24 Template/HiringParties/edit.ctp:30
+#: Template/Invoices/add.ctp:24 Template/Invoices/edit.ctp:30
+#: Template/Payments/add.ctp:24 Template/Payments/edit.ctp:30
+#: Template/RefHiringPartyTypes/add.ctp:22
+#: Template/RefHiringPartyTypes/edit.ctp:28 Template/Roles/add.ctp:22
+#: Template/Roles/edit.ctp:28 Template/Users/add.ctp:26
+#: Template/Users/edit.ctp:32
+msgid "Submit"
+msgstr "soumèt"
+
+#: Template/Billboards/edit.ctp:11 Template/Billboards/index.ctp:37
+#: Template/BillboardsHired/edit.ctp:11 Template/BillboardsHired/index.ctp:53
+#: Template/HiringParties/edit.ctp:11 Template/HiringParties/index.ctp:41
+#: Template/Invoices/edit.ctp:11 Template/Invoices/index.ctp:44
+#: Template/Payments/edit.ctp:11 Template/Payments/index.ctp:41
+#: Template/RefHiringPartyTypes/edit.ctp:11
+#: Template/RefHiringPartyTypes/index.ctp:39 Template/Roles/edit.ctp:11
+#: Template/Roles/index.ctp:31 Template/Roles/view.ctp:50
+#: Template/Users/edit.ctp:11 Template/Users/index.ctp:38
+msgid "Delete"
+msgstr "Debarase m de"
+
+#: Template/Billboards/edit.ctp:13 Template/Billboards/index.ctp:37
+#: Template/Billboards/view.ctp:11 Template/BillboardsHired/edit.ctp:13
+#: Template/BillboardsHired/index.ctp:53 Template/BillboardsHired/view.ctp:11
+#: Template/HiringParties/edit.ctp:13 Template/HiringParties/index.ctp:41
+#: Template/HiringParties/view.ctp:11 Template/Invoices/edit.ctp:13
+#: Template/Invoices/index.ctp:44 Template/Invoices/view.ctp:11
+#: Template/Payments/edit.ctp:13 Template/Payments/index.ctp:41
+#: Template/Payments/view.ctp:11 Template/RefHiringPartyTypes/edit.ctp:13
+#: Template/RefHiringPartyTypes/index.ctp:39
+#: Template/RefHiringPartyTypes/view.ctp:11 Template/Roles/edit.ctp:13
+#: Template/Roles/index.ctp:31 Template/Roles/view.ctp:11;50
+#: Template/Users/edit.ctp:13 Template/Users/index.ctp:38
+#: Template/Users/view.ctp:11
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Èske ou sèten ou vle efase # {0} ?"
+
+#: Template/Billboards/edit.ctp:22 Template/Billboards/view.ctp:10
+msgid "Edit Billboard"
+msgstr "Editer panneau d'affichage"
+
+#: Template/Billboards/index.ctp:12 Template/Billboards/view.ctp:13
+#: Template/BillboardsHired/add.ctp:12 Template/BillboardsHired/edit.ctp:18
+#: Template/BillboardsHired/index.ctp:14 Template/BillboardsHired/view.ctp:15
+msgid "New Billboard"
+msgstr "New pano"
+
+#: Template/Billboards/index.ctp:16
+msgid "Billboards"
+msgstr "tablo afichaj"
+
+#: Template/Billboards/index.ctp:35 Template/BillboardsHired/index.ctp:51
+#: Template/HiringParties/index.ctp:39 Template/Invoices/index.ctp:42
+#: Template/Payments/index.ctp:39 Template/RefHiringPartyTypes/index.ctp:37
+#: Template/Roles/index.ctp:29 Template/Roles/view.ctp:48
+#: Template/Users/index.ctp:36
+msgid "View"
+msgstr "Gade"
+
+#: Template/Billboards/index.ctp:36 Template/BillboardsHired/index.ctp:52
+#: Template/HiringParties/index.ctp:40 Template/Invoices/index.ctp:43
+#: Template/Payments/index.ctp:40 Template/RefHiringPartyTypes/index.ctp:38
+#: Template/Roles/index.ctp:30 Template/Roles/view.ctp:49
+#: Template/Users/index.ctp:37
+msgid "Edit"
+msgstr "Edit"
+
+#: Template/Billboards/index.ctp:45 Template/BillboardsHired/index.ctp:61
+#: Template/HiringParties/index.ctp:49 Template/Invoices/index.ctp:52
+#: Template/Payments/index.ctp:49 Template/RefHiringPartyTypes/index.ctp:47
+#: Template/Roles/index.ctp:39 Template/Users/index.ctp:46
+msgid "first"
+msgstr "premye"
+
+#: Template/Billboards/index.ctp:46 Template/BillboardsHired/index.ctp:62
+#: Template/HiringParties/index.ctp:50 Template/Invoices/index.ctp:53
+#: Template/Payments/index.ctp:50 Template/RefHiringPartyTypes/index.ctp:48
+#: Template/Roles/index.ctp:40 Template/Users/index.ctp:47
+msgid "previous"
+msgstr "anvan"
+
+#: Template/Billboards/index.ctp:48 Template/BillboardsHired/index.ctp:64
+#: Template/HiringParties/index.ctp:52 Template/Invoices/index.ctp:55
+#: Template/Payments/index.ctp:52 Template/RefHiringPartyTypes/index.ctp:50
+#: Template/Roles/index.ctp:42 Template/Users/index.ctp:49
+msgid "next"
+msgstr "pwochen"
+
+#: Template/Billboards/index.ctp:49 Template/BillboardsHired/index.ctp:65
+#: Template/HiringParties/index.ctp:53 Template/Invoices/index.ctp:56
+#: Template/Payments/index.ctp:53 Template/RefHiringPartyTypes/index.ctp:51
+#: Template/Roles/index.ctp:43 Template/Users/index.ctp:50
+msgid "last"
+msgstr "dènye"
+
+#: Template/Billboards/index.ctp:51 Template/BillboardsHired/index.ctp:67
+#: Template/HiringParties/index.ctp:55 Template/Invoices/index.ctp:58
+#: Template/Payments/index.ctp:55 Template/RefHiringPartyTypes/index.ctp:53
+#: Template/Roles/index.ctp:45 Template/Users/index.ctp:52
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr "Paj {{paj}} nan {{paj}}, ki montre {{aktyèl}} dosye soti nan {{count}} total"
+
+#: Template/Billboards/view.ctp:11
+msgid "Delete Billboard"
+msgstr "Efase pano"
+
+#: Template/Billboards/view.ctp:20
+msgid "Billboard Details"
+msgstr "Panno Detay"
+
+#: Template/Billboards/view.ctp:24
+msgid "Billboard Id"
+msgstr "Pano Id"
+
+#: Template/Billboards/view.ctp:28 Template/BillboardsHired/view.ctp:52
+#: Template/HiringParties/view.ctp:34 Template/Invoices/view.ctp:36
+#: Template/Payments/view.ctp:34 Template/RefHiringPartyTypes/view.ctp:32
+#: Template/Roles/view.ctp:34 Template/Users/view.ctp:42
+msgid "Created"
+msgstr "Créé"
+
+#: Template/Billboards/view.ctp:32 Template/BillboardsHired/view.ctp:56
+#: Template/HiringParties/view.ctp:38 Template/Invoices/view.ctp:40
+#: Template/Payments/view.ctp:38 Template/RefHiringPartyTypes/view.ctp:36
+#: Template/Roles/view.ctp:35 Template/Users/view.ctp:46
+msgid "Modified"
+msgstr "modifye"
+
+#: Template/BillboardsHired/add.ctp:10 Template/BillboardsHired/edit.ctp:16
+#: Template/BillboardsHired/view.ctp:12 Template/Invoices/add.ctp:11
+#: Template/Invoices/edit.ctp:17 Template/Invoices/index.ctp:13
+#: Template/Invoices/view.ctp:14
+msgid "List Billboards Hired"
+msgstr "Lis anplwaye Billboards"
+
+#: Template/BillboardsHired/add.ctp:13 Template/BillboardsHired/edit.ctp:19
+#: Template/BillboardsHired/index.ctp:15 Template/BillboardsHired/view.ctp:16
+#: Template/HiringParties/add.ctp:10 Template/HiringParties/edit.ctp:16
+#: Template/HiringParties/view.ctp:12
+msgid "List Hiring Parties"
+msgstr "Lis Anplwaye Pati yo"
+
+#: Template/BillboardsHired/add.ctp:14 Template/BillboardsHired/edit.ctp:20
+#: Template/BillboardsHired/index.ctp:16 Template/BillboardsHired/view.ctp:17
+#: Template/HiringParties/index.ctp:12 Template/HiringParties/view.ctp:13
+msgid "New Hiring Party"
+msgstr "New Hiring Pati"
+
+#: Template/BillboardsHired/add.ctp:15 Template/BillboardsHired/edit.ctp:21
+#: Template/BillboardsHired/index.ctp:17 Template/BillboardsHired/view.ctp:18
+#: Template/Roles/add.ctp:11 Template/Roles/edit.ctp:17
+#: Template/Roles/index.ctp:11 Template/Roles/view.ctp:14
+#: Template/Users/add.ctp:10 Template/Users/edit.ctp:16
+#: Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "Lis Itilizatè yo"
+
+#: Template/BillboardsHired/add.ctp:16 Template/BillboardsHired/edit.ctp:22
+#: Template/BillboardsHired/index.ctp:18 Template/BillboardsHired/view.ctp:19
+#: Template/Roles/add.ctp:12 Template/Roles/edit.ctp:18
+#: Template/Roles/index.ctp:12 Template/Roles/view.ctp:15
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:13
+msgid "New User"
+msgstr "Nouvo Itilizatè"
+
+#: Template/BillboardsHired/add.ctp:22
+msgid "Add Billboards Hired"
+msgstr "Add anboche anboche"
+
+#: Template/BillboardsHired/edit.ctp:28 Template/BillboardsHired/view.ctp:10
+msgid "Edit Billboards Hired"
+msgstr "Edit anboche Billboards"
+
+#: Template/BillboardsHired/index.ctp:12 Template/BillboardsHired/view.ctp:13
+#: Template/Invoices/add.ctp:12 Template/Invoices/edit.ctp:18
+#: Template/Invoices/index.ctp:14 Template/Invoices/view.ctp:15
+msgid "New Billboards Hired"
+msgstr "New anboche pano"
+
+#: Template/BillboardsHired/index.ctp:19 Template/BillboardsHired/view.ctp:20
+#: Template/Invoices/add.ctp:10 Template/Invoices/edit.ctp:16
+#: Template/Invoices/view.ctp:12 Template/Payments/add.ctp:11
+#: Template/Payments/edit.ctp:17 Template/Payments/index.ctp:13
+#: Template/Payments/view.ctp:14
+msgid "List Invoices"
+msgstr "Lis Factures"
+
+#: Template/BillboardsHired/index.ctp:20 Template/BillboardsHired/view.ctp:21
+msgid "New Invoices"
+msgstr "Nouvo enpo"
+
+#: Template/BillboardsHired/index.ctp:24 Template/Invoices/view.ctp:24
+msgid "Billboards Hired"
+msgstr "Anboche Billboards"
+
+#: Template/BillboardsHired/view.ctp:11
+msgid "Delete Billboards Hired"
+msgstr "Efase tablo afichaj anboche"
+
+#: Template/BillboardsHired/view.ctp:28
+msgid "Billboard"
+msgstr "pano"
+
+#: Template/BillboardsHired/view.ctp:32
+msgid "Hiring Party"
+msgstr "Anplwaye Pati"
+
+#: Template/BillboardsHired/view.ctp:36
+msgid "User"
+msgstr "mete"
+
+#: Template/BillboardsHired/view.ctp:40
+msgid "Billboard Hire Id"
+msgstr "Pano Hire Id"
+
+#: Template/BillboardsHired/view.ctp:44
+msgid "Date Hired From"
+msgstr "Dat li te anboche"
+
+#: Template/BillboardsHired/view.ctp:48
+msgid "Date Hired To"
+msgstr "Dat li te anplwaye"
+
+#: Template/HiringParties/add.ctp:11 Template/HiringParties/edit.ctp:17
+#: Template/HiringParties/index.ctp:13 Template/HiringParties/view.ctp:14
+#: Template/RefHiringPartyTypes/add.ctp:10
+#: Template/RefHiringPartyTypes/edit.ctp:16
+#: Template/RefHiringPartyTypes/view.ctp:12
+msgid "List Ref Hiring Party Types"
+msgstr "Liste Ref Type de parti d'embauche"
+
+#: Template/HiringParties/add.ctp:12 Template/HiringParties/edit.ctp:18
+#: Template/HiringParties/index.ctp:14 Template/HiringParties/view.ctp:15
+#: Template/RefHiringPartyTypes/index.ctp:12
+#: Template/RefHiringPartyTypes/view.ctp:13
+msgid "New Ref Hiring Party Type"
+msgstr "Nouveau type de parti d'embauche de référence"
+
+#: Template/HiringParties/add.ctp:18
+msgid "Add Hiring Party"
+msgstr "Add Anplwaye Pati"
+
+#: Template/HiringParties/edit.ctp:24 Template/HiringParties/view.ctp:10
+msgid "Edit Hiring Party"
+msgstr "Edit anplwaye Pati"
+
+#: Template/HiringParties/index.ctp:18
+msgid "Hiring Parties"
+msgstr "Anplwaye Pati yo"
+
+#: Template/HiringParties/view.ctp:11
+msgid "Delete Hiring Party"
+msgstr "Efase Anplwaye Pati"
+
+#: Template/HiringParties/view.ctp:22
+msgid "Hiring Party Details"
+msgstr "Anplwaye Pati Detay"
+
+#: Template/HiringParties/view.ctp:26
+msgid "Ref Hiring Party Type"
+msgstr "Ref Peye Pati Kalite"
+
+#: Template/HiringParties/view.ctp:30
+msgid "Hiring Party Id"
+msgstr "Anplwaye Pati Id"
+
+#: Template/Invoices/add.ctp:18
+msgid "Add Invoice"
+msgstr "Add Account"
+
+#: Template/Invoices/edit.ctp:24 Template/Invoices/view.ctp:10
+msgid "Edit Invoice"
+msgstr "Edit Revo"
+
+#: Template/Invoices/index.ctp:12 Template/Invoices/view.ctp:13
+#: Template/Payments/add.ctp:12 Template/Payments/edit.ctp:18
+#: Template/Payments/index.ctp:14 Template/Payments/view.ctp:15
+msgid "New Invoice"
+msgstr "Nouvo bòdwo"
+
+#: Template/Invoices/index.ctp:15 Template/Invoices/view.ctp:16
+#: Template/Payments/add.ctp:10 Template/Payments/edit.ctp:16
+#: Template/Payments/view.ctp:12
+msgid "List Payments"
+msgstr "Lis Peman"
+
+#: Template/Invoices/index.ctp:16 Template/Invoices/view.ctp:17
+msgid "New Payments"
+msgstr "Nouvo peman"
+
+#: Template/Invoices/index.ctp:21
+msgid "Invoices"
+msgstr "bòdwo"
+
+#: Template/Invoices/view.ctp:11
+msgid "Delete Invoice"
+msgstr "Efase fakti"
+
+#: Template/Invoices/view.ctp:28
+msgid "Invoice Details"
+msgstr "Detay yo"
+
+#: Template/Invoices/view.ctp:32
+msgid "Invoice Id"
+msgstr "Fakti Id"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "erè"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Retounen"
+
+#: Template/Payments/add.ctp:18
+msgid "Add Payment"
+msgstr "Add Peman"
+
+#: Template/Payments/edit.ctp:24 Template/Payments/view.ctp:10
+msgid "Edit Payment"
+msgstr "Edit Peman"
+
+#: Template/Payments/index.ctp:12 Template/Payments/view.ctp:13
+msgid "New Payment"
+msgstr "Nouvo Peman"
+
+#: Template/Payments/index.ctp:18
+msgid "Payments"
+msgstr "peman"
+
+#: Template/Payments/view.ctp:11
+msgid "Delete Payment"
+msgstr "Efase Peman"
+
+#: Template/Payments/view.ctp:22
+msgid "Invoice"
+msgstr "facture"
+
+#: Template/Payments/view.ctp:26
+msgid "Payment Details"
+msgstr "Peman Detay"
+
+#: Template/Payments/view.ctp:30
+msgid "Payment Id"
+msgstr "Peman Id"
+
+#: Template/RefHiringPartyTypes/add.ctp:16
+msgid "Add Ref Hiring Party Type"
+msgstr "Add Ref. Kalite Pati Pati"
+
+#: Template/RefHiringPartyTypes/edit.ctp:22
+#: Template/RefHiringPartyTypes/view.ctp:10
+msgid "Edit Ref Hiring Party Type"
+msgstr "Edit Ref Hiring Pati Kalite"
+
+#: Template/RefHiringPartyTypes/index.ctp:16
+msgid "Ref Hiring Party Types"
+msgstr "Refize Kalite pati yo"
+
+#: Template/RefHiringPartyTypes/view.ctp:11
+msgid "Delete Ref Hiring Party Type"
+msgstr "Efase Ref Hiring Pati Kalite"
+
+#: Template/RefHiringPartyTypes/view.ctp:20
+msgid "Hiring Party Type Description"
+msgstr "Anplwaye Pati Deskripsyon Tip"
+
+#: Template/RefHiringPartyTypes/view.ctp:24
+msgid "Advertising Agency Client"
+msgstr "Ajans Ajans Kliyan"
+
+#: Template/RefHiringPartyTypes/view.ctp:28
+msgid "Hiring Party Type Code Id"
+msgstr "Anplwaye Pati Kalite Kòd Id"
+
+#: Template/Roles/add.ctp:10 Template/Roles/edit.ctp:16
+#: Template/Roles/view.ctp:12 Template/Users/add.ctp:11
+#: Template/Users/edit.ctp:17 Template/Users/index.ctp:11
+#: Template/Users/view.ctp:14
+msgid "List Roles"
+msgstr "Liste des rôles"
+
+#: Template/Roles/add.ctp:18
+msgid "Add Role"
+msgstr "Add wòl"
+
+#: Template/Roles/edit.ctp:24 Template/Roles/view.ctp:10
+msgid "Edit Role"
+msgstr "Edit wòl"
+
+#: Template/Roles/index.ctp:10 Template/Roles/view.ctp:13
+#: Template/Users/add.ctp:12 Template/Users/edit.ctp:18
+#: Template/Users/index.ctp:12 Template/Users/view.ctp:15
+msgid "New Role"
+msgstr "Nouvo wòl"
+
+#: Template/Roles/index.ctp:16
+msgid "Roles"
+msgstr "wòl"
+
+#: Template/Roles/view.ctp:11
+msgid "Delete Role"
+msgstr "Efase wòl"
+
+#: Template/Roles/view.ctp:22
+msgid "Id"
+msgstr "id"
+
+#: Template/Roles/view.ctp:27
+msgid "Related Users"
+msgstr "Itilizatè ki gen rapò ak"
+
+#: Template/Roles/view.ctp:31 Template/Users/view.ctp:38
+msgid "User Id"
+msgstr "Itilizatè Id"
+
+#: Template/Roles/view.ctp:32 Template/Users/view.ctp:22
+msgid "Username"
+msgstr "D '"
+
+#: Template/Roles/view.ctp:33 Template/Users/view.ctp:26
+msgid "Password"
+msgstr "modpas"
+
+#: Template/Roles/view.ctp:36
+msgid "Role Id"
+msgstr "Wòl Id"
+
+#: Template/Users/add.ctp:18
+msgid "Add User"
+msgstr "Add Itilizatè"
+
+#: Template/Users/edit.ctp:24 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "Edit Itilizatè"
+
+#: Template/Users/index.ctp:16
+msgid "Users"
+msgstr "itilizatè yo"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Efase Itilizatè"
+
+#: Template/Users/view.ctp:30
+msgid "Role"
+msgstr "wòl"
+
+#: Template/Users/view.ctp:34
+msgid "Email"
+msgstr "e-mail"
+
