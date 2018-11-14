@@ -38,16 +38,19 @@ function billboardsAction(type, id) {
     var statusArr = {add: "added", edit: "updated", delete: "deleted"};
     var billboardData = '';
     if (type == 'add') {
-        billboardData = $("#addForm").find('.form').serialize() + '&action_type=' + type + '&id=' + id;
+         requestType = 'POST';
+        billboardData = convertFormToJSON($("#addForm").find('.form'));
     } else if (type == 'edit') {
-        billboardData = $("#editForm").find('.form').serialize() + '&action_type=' + type;
+          requestType = 'PUT';
+		ajaxUrl = ajaxUrl + "/" + idEdit.value;
+        billboardData = convertFormToJSON($("#editForm").find('.form'));
     } else {
         billboardData = 'action_type=' + type + '&id=' + id;
     }
     $.ajax({
        type: requestType,
         headers: {
-            'X-CSRF-Token': $('[name="_csrfToken"]').val()
+          'X-CSRF-Token': csrfToken
         },
         url: ajaxUrl,
         dataType: "json",
@@ -72,8 +75,8 @@ function editBillboards(id) {
         dataType: 'JSON',
         url: urlToRestApi+ "/" + id,
         success: function (data) {
-            $('#billboard_idEdit').val(data.data.id);
-            $('#billboard_detailsEdit').val(data.data.billboard_details);        
+            $('#billboard_idAdd').val(data.data.id);
+            $('#billboard_detailsAdd').val(data.data.billboard_details);        
             $('#editForm').slideDown();
         }
     });

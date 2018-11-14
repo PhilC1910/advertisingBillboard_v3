@@ -55,7 +55,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-             
+          
                   <li>
                    <?=
                         $this->Html->link('Listes dynamiques', [

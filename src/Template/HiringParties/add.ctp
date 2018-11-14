@@ -29,7 +29,10 @@ echo $this->Html->script('HiringParties/add', ['block' => 'scriptBottom']);
     <fieldset>
         <legend><?= __('Add Hiring Party') ?></legend>
         <?php
-            echo $this->Form->control('hiring_party_details');
+            echo $this->Form->control('hiring_party_details', ['id'=>'autocomplete']);
+            
+              ?>
+         <?php
             echo $this->Form->control('hiring_party_type_code_id', ['options' => $refHiringPartyTypes]);
         ?>
     </fieldset>

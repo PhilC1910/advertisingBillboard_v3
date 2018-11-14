@@ -171,8 +171,8 @@ class HiringPartiesController extends AppController
         $hiring_parties = $this->HiringParties->find('all', [
             'conditions' => ['hiring_parties.hiring_party_type_code_id' => $refHiringPartyTypes],
         ]);
-        $this->set('hiring_parties',   $hiring_parties);
-        $this->set('_serialize', ['hiring_parties']);
+        $this->set('$hiring_parties',   $hiring_parties);
+        $this->set('_serialize', ['$hiring_parties']);
     }
     
     

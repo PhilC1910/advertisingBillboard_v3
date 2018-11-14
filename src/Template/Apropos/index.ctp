@@ -14,10 +14,10 @@
     
     <p> Automne 2018, College Montmorency</p>
     
-    <p> Description du projet: En ajoutant un utilisateur avec le rôle d'agent de marketing, il doit avoir un courriel envoyer
-        pour avoir un lien de confiramtion et un bouton le renvoyer s'il n'a pas confirmer son courriel. Il l'a possibilité de changer de langue 
-        avec 3 choix au menu et de voir le changement d'une ligne parmi les 3 options. la page de la list des utilisateurs permet d'aller dans la list des billboards hired et les différents page. 
-        la page de la liste du fichier permet de voir un image du invoice. 
+    <p> Description du projet:en cliquant sur le menu de autocomplete, on peut voir le billboards detail dans la base de donnée. La liste déroulante est supposée donnée les donner du hiring party détail.
+        L'API REST  envois a la table du billboard pour supprimer,modifier et ajouter dans la table. il est supppoé avoir un coverage de test dans un lien dans la page a propos. il y a un routage admin et le bootstap est dans la même table.
+        il est aussi sensé avoir un document pdf sur le la view du billboard hired dans le dossier Admin.
+        
     </p>
     
     
