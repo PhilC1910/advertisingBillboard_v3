@@ -26,6 +26,8 @@ $userrole = $loguser['role_id'];
                 <th scope="col"><?= $this->Paginator->sort('hiring_party_type_code_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+                   <th scope="col"><?= $this->Paginator->sort('agency') ?></th>
+                        <th scope="col"><?= $this->Paginator->sort('advertising_agency_client') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -37,6 +39,8 @@ $userrole = $loguser['role_id'];
                 <td><?= $hiringParty->has('ref_hiring_party_type') ? $this->Html->link($hiringParty->ref_hiring_party_type->hiring_party_type_code_id, ['controller' => 'RefHiringPartyTypes', 'action' => 'view', $hiringParty->ref_hiring_party_type->hiring_party_type_code_id]) : '' ?></td>
                 <td><?= h($hiringParty->created) ?></td>
                 <td><?= h($hiringParty->modified) ?></td>
+                 <td><?= h($hiringParty->agency) ?></td>
+                 <td><?= $hiringParty->has('advertising_agency_client') ? $this->Html->link($hiringParty->ref_hiring_party_type->advertising_agency_client, ['controller' => 'RefHiringPartyTypes', 'action' => 'view', $hiringParty->ref_hiring_party_type->advertising_agency_client]) : '' ?></td>
                 <td class="actions">
               
       <?= $this->Html->link(__('View'), ['action' => 'view', $hiringParty->hiring_party_id]) ?>

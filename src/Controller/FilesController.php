@@ -56,34 +56,37 @@ class FilesController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
+     public function add() {
         $file = $this->Files->newEntity();
-        if ($this->request->is('post')) {
-            if (!empty($this->request->data['name']['name'])) {
-                $fileName = $this->request->data['name']['name'];
-                $uploadPath = 'Files/';
+        if ($this->request->is('post') or $this->request->is('ajax')) {
+            //debug($this->request->data);
+            //die();
+            if (!empty($this->request->data['file']['name'])) {
+                //debug($this->request->data);
+                //die();
+                $fileName = $this->request->data['file']['name'];
+                $uploadPath = 'Files/add/';
                 $uploadFile = $uploadPath . $fileName;
-                if (move_uploaded_file($this->request->data['name']['tmp_name'], 'img/' . $uploadFile)) {
-           
-                    $file = $this->Files->patchEntity($file, $this->request->getData());
+                if (move_uploaded_file($this->request->data['file']['tmp_name'], 'img/' . $uploadFile)) {
+                    //$file = $this->Files->patchEntity($file, $this->request->getData());
                     $file->name = $fileName;
                     $file->path = $uploadPath;
-                    
+                    $file->status = 1;
                     if ($this->Files->save($file)) {
                         $this->Flash->success(__('File has been uploaded and inserted successfully.'));
                     } else {
                         $this->Flash->error(__('Unable to upload file, please try again.'));
                     }
                 } else {
-                    $this->Flash->error(__('Unable to save file, please try again.'));
+                    $this->Flash->error(__('Unable to upload file, please try again.'));
                 }
             } else {
                 $this->Flash->error(__('Please choose a file to upload.'));
             }
         }
-        
-        $this->set(compact('file'));
+        $articles = $this->Files->Articles->find('list', ['limit' => 200]);
+        $this->set(compact('file', 'Invoices'));
+        $this->set('_serialize', ['file']);
     }
 
     /**
@@ -107,7 +110,8 @@ class FilesController extends AppController
             }
             $this->Flash->error(__('The file could not be saved. Please, try again.'));
         }
-        $this->set(compact('file'));
+        $this->set(compact('file', 'Invoices'));
+        $this->set('_serialize', ['file']);
     }
 
     /**

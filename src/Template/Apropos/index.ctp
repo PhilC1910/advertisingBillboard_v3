@@ -14,14 +14,14 @@
     
     <p> Automne 2018, College Montmorency</p>
     
-    <p> Description du projet:en cliquant sur le menu de autocomplete, on peut voir le billboards detail dans la base de donnée. La liste déroulante est supposée donnée les donner du hiring party détail.
-        L'API REST  envois a la table du billboard pour supprimer,modifier et ajouter dans la table. il est supppoé avoir un coverage de test dans un lien dans la page a propos. il y a un routage admin et le bootstap est dans la même table.
-        il est aussi sensé avoir un document pdf sur le la view du billboard hired dans le dossier Admin.
+    <p> Description du projet: en cliquant sur la liste liée c'est censé être en angularjs et finctionnel. 
+        En allant sur l'api de billboards l'option pour ce login est supposé fonctionner avec l'option de captcha 
+        en étant login tu peut changer de mot de passe ou logout. Tu peux selectionner un billboard details dans le search 
+        et tu peux soit le modifier ou ajouter un autre. Tu peux voir tous les billboards dans la base de donnée 
+        et tu peux soit l'éditer ou le supprimer. Il y a aussi l'option de drag and drop un image dans le lien des files du site.
         
     </p>
     
-    
-   
     <p> le shéma de la base de donnée 
       <?php  echo  $this->Html->image('schema_base_de_donnee.PNG', ['alt' => 'Schema base de donnnee'], ['width'=>"100"], ['height'=>"100"], ['align' => 'center']) ?>
    </p>

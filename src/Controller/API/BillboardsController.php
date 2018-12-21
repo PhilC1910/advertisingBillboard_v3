@@ -6,8 +6,11 @@ use App\Controller\Api\AppController;
 class BillboardsController extends AppController
 {
    
-    
- public $paginate = [
+   public function initialize() {
+        parent::initialize();
+        $this->Auth->allow(['index', 'view', 'add', 'edit', 'delete']);
+    }
+        public $paginate = [
         'page' => 1,
         'limit' => 100,
         'maxLimit' => 150,

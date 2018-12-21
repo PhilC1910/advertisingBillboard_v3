@@ -166,13 +166,13 @@ class HiringPartiesController extends AppController
     }
     
        public function getByHiringPartyReference() {
-        $refHiringPartyTypes = $this->request->query('hiring_party_type_code_id');
+        $refHiringPartyTypes = $this->request->query('hiring_party_type_description');
 
-        $hiring_parties = $this->HiringParties->find('all', [
-            'conditions' => ['hiring_parties.hiring_party_type_code_id' => $refHiringPartyTypes],
+        $hiringParties = $this->HiringParties->find('all', [
+            'conditions' => ['agency' => $refHiringPartyTypes],
         ]);
-        $this->set('$hiring_parties',   $hiring_parties);
-        $this->set('_serialize', ['$hiring_parties']);
+        $this->set('hiringParties',   $hiringParties);
+        $this->set('_serialize', ['hiringParties']);
     }
     
     

@@ -1,8 +1,8 @@
 
 <?php
 $urlToLinkedListFilter = $this->Url->build([
-    "controller" => "HiringParties",
-    "action" => "getByHiringPartyReference",
+    "controller" => "RefHiringPartyTypes",
+    "action" => "getByHiringParty",
     "_ext" => "json"
         ]);
 echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
@@ -28,13 +28,18 @@ echo $this->Html->script('HiringParties/add', ['block' => 'scriptBottom']);
     <?= $this->Form->create($hiringParty) ?>
     <fieldset>
         <legend><?= __('Add Hiring Party') ?></legend>
-        <?php
-            echo $this->Form->control('hiring_party_details', ['id'=>'autocomplete']);
-            
-              ?>
-         <?php
-            echo $this->Form->control('hiring_party_type_code_id', ['options' => $refHiringPartyTypes]);
+     
+            <?php
+        // echo $this->Form->control('user_id', ['options' => $users]);
+        echo $this->Form->control('hiring_party_id', ['options' => $hiringParties]);
+        echo $this->Form->control('hiring_party_type_code_id', ['options' => $refHringPartyType]);
+        echo $this->Form->control('hiring_party_details', ['id'=>'autocomplete']);
+        echo $this->Form->control('hiring_party_type_code_id', ['options' => $refHiringPartyTypes]);
+        echo $this->Form->control('agency');
+        echo $this->Form->control('advertising_agency_client', ['options' => $refHiringPartyTypes]);
         ?>
+        
+       
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>

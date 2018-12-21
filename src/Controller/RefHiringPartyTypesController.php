@@ -141,8 +141,17 @@ class RefHiringPartyTypesController extends AppController
     
     public function initialize() {
         parent::initialize();
-        $this->Auth->allow(['display', 'view', 'index']);
+        $this->Auth->allow(['display', 'view', 'index','getByHiringParty']);
     }    public function __construct(\Cake\Http\ServerRequest $request = null, \Cake\Http\Response $response = null, $name = null, $eventManager = null, $components = null) {
         parent::__construct($request, $response, $name, $eventManager, $components);
+    }
+        public function getByHiringParty() {
+        $hiring_psrty_id = $this->request->query('hiring_party_id');
+
+        $refHringPartyType = $this->RefHiringPartyTypes->find('all', [
+            'conditions' => ['ref_hiring_party_types.hiring_party_id' => $$hiring_psrty_id],
+        ]);
+        $this->set('refHringPartyType', $refHringPartyType);
+        $this->set('_serialize', ['refHringPartyType']);
     }
 }

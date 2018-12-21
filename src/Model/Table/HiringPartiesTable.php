@@ -47,6 +47,8 @@ class HiringPartiesTable extends Table
             'foreignKey' => 'hiring_party_type_code_id',
             'joinType' => 'INNER'
         ]);
+        
+       
     }
 
     /**
@@ -80,7 +82,7 @@ class HiringPartiesTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['hiring_party_type_code_id'], 'RefHiringPartyTypes'));
-
+        $rules->add($rules->existsIn(['advertising_agency_client'], 'RefHiringPartyTypes'));
         return $rules;
     }
 }

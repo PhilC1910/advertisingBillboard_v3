@@ -31,6 +31,8 @@ class HiringParty extends Entity
         'hiring_party_type_code_id' => true,
         'created' => true,
         'modified' => true,
-        'ref_hiring_party_type' => true
+        'ref_hiring_party_type' => true,
+         'agency' => true,
+          'advertising_agency_client' => true
     ];
 }
