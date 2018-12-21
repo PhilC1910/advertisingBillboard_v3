@@ -17,7 +17,7 @@ echo $this->Html->script('Billboards/index', ['block' => 'scriptBottom']);
 		<body ng-app="app">
 		 <div ng-controller = "usersCtrlr">
 
-                <div id="logDiv" style="margin: 10px 0 20px 0;"><a href="javascript:void(0);" class="glyphicon glyphicon-log-in" id="login-btn" onclick="javascript:$('#loginForm').slideToggle();">Login</a></div>
+                <div id="logDiv" style="margin: 10px 0 20px 0;"><a href="javascript:void(0);" class="glyphicon glyphicon-log-in" id="login-btn" onclick="javascript:$('#loginForm').slideToggle();">Login User</a></div>
                    
                 <div id="example1"></div> 
                     <p style="color:red;">{{ captcha_status }}</p>     
@@ -31,8 +31,8 @@ echo $this->Html->script('Billboards/index', ['block' => 'scriptBottom']);
                             <input ng-model="password" type="password" class="form-control" id="password" name="password"  style="width: 250px"/>
 							
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#loginForm').slideUp(); emptyInput();">Cancel</a>
-                        <a href="javascript:void(0);" class="btn btn-success" ng-click="login()">Submit</a>
+                        <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#loginForm').slideUp(); emptyInput();">Cancel Login</a>
+                        <a href="javascript:void(0);" class="btn btn-success" ng-click="login()">Login</a>
                     </form>
                 </div>
 
