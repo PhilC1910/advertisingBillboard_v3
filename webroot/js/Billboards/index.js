@@ -1,11 +1,10 @@
 // angular js codes will be here
 var onloadCallback = function() {
-    widgetId1 = grecaptcha.render('capcha', {
+    widgetId1 = grecaptcha.render('example1', {
         'sitekey': '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI',
         'theme': 'light'
     });
 };
-
 var app = angular.module('app', []);
 
 app.controller('usersCtrl', function ($scope, $http) {
